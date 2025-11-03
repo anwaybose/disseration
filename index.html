@@ -779,9 +779,9 @@ Anway Bose <a href="https://orcid.org/0000-0002-7145-6203" class="quarto-title-a
 </div>
 <div class="callout-content">
 <ul>
-<li><p><span class="math inline">\(C_a = Enc(g^{m_1}) = (g^{r1}, g^{m_1} \star h^{r1})\)</span></p></li>
-<li><p><span class="math inline">\(C_b = Enc(g^{m_2}) = (g^{r2}, g^{m_2} \star h^{r2})\)</span></p></li>
-<li><p><span class="math inline">\(C_3 = C_a \star C_b = (g^{r1 + r2}, \ g^{m_1+m_2} \star h^{r1+r2})\)</span></p></li>
+<li><p><span class="math inline">\(C_a = Enc(g^{m_1}) = (g^{r1}, g^{m_1} \star h^{r1}) \ \text{mod} \ p\)</span></p></li>
+<li><p><span class="math inline">\(C_b = Enc(g^{m_2}) = (g^{r2}, g^{m_2} \star h^{r2}) \ \text{mod} \ p\)</span></p></li>
+<li><p><span class="math inline">\(C_3 = C_a \star C_b = (g^{r1 + r2}, \ g^{m_1+m_2} \star h^{r1+r2}) \ \text{mod} \ p\)</span></p></li>
 <li><p><span class="math inline">\(De(C_3) = m_1+m_2\)</span>.</p></li>
 </ul>
 </div>
@@ -798,7 +798,7 @@ Anway Bose <a href="https://orcid.org/0000-0002-7145-6203" class="quarto-title-a
 <div class="callout-content">
 <ul>
 <li><span class="math inline">\(E(m, r)^k = (C_1^k, C_2^k) \ \text{mod} \ p\)</span></li>
-<li><span class="math inline">\(= (g^{rk}, (g^m \cdot h^r)^k) = = (g^{rk}, g^{mk} \cdot h^{rk})\)</span></li>
+<li><span class="math inline">\(= (g^{rk}, (g^m \cdot h^r)^k) \ \text{mod} \ p = (g^{rk}, g^{mk} \cdot h^{rk}) \ \text{mod} \ p\)</span></li>
 <li><span class="math inline">\(= E(k \cdot m, k \cdot r)\)</span></li>
 </ul>
 </div>
